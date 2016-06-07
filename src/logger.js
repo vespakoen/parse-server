@@ -68,7 +68,7 @@ export function addGroup(groupName) {
     name: groupName,
     level: level
   }));
-
+  console.log('transports', transports)
   winston.loggers.add(groupName, {
     transports: transports
   });
